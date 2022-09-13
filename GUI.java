@@ -86,7 +86,27 @@ public class GUI extends JFrame{
 
     //Update the GUI
     public void updateQuestionLabel(String newQuestion){
-        questionLabel.setText(newQuestion);
+        String[] strArr = newQuestion.split(" ");
+        //If the array is too long to fit in the main size
+        if(strArr.length >= 17){
+            StringBuilder str = new StringBuilder("<html><center>");
+            //I recontruct 
+            int i = 0;
+            for(String currentSubstring: strArr){
+                str.append(currentSubstring);
+                if(i%17==0&&i!=0){
+                    str.append("<br>");
+                }else{
+                    str.append(" ");
+                }
+                i++;
+            }
+            str.append("</center></html>");
+            newQuestion = str.toString();
+            questionLabel.setText(newQuestion);
+        } else {
+            questionLabel.setText(newQuestion);
+        }
     }
     public void updateButton0Label(String newPrompt){
         button0.setText(newPrompt);
