@@ -10,7 +10,7 @@ public class SoundPlayer{
     //For the correct sound effect
     public static void playCorrectSound(){
         try{
-            File audioFile = new File("correctSoundEffect.wav");
+            File audioFile = new File("Sound/correctSoundEffect.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
             //We read the type of audio format
             AudioFormat format = audioStream.getFormat();
@@ -29,7 +29,7 @@ public class SoundPlayer{
     }
     public static void playWrongSound(){
         try{
-            File audioFile = new File("wrongSoundEffect.wav");
+            File audioFile = new File("Sound/wrongSoundEffect.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
             //We read the type of audio format
             AudioFormat format = audioStream.getFormat();

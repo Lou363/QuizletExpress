@@ -87,7 +87,7 @@ public class fileGUI extends JFrame{
         try{
             // I read the main file
             fileName = fileBox.getText();
-            file = new File(fileBox.getText()+".txt");
+            file = new File("Database/"+fileBox.getText()+".txt");
             Scanner fileContent = new Scanner(file);
             //I begin to read the file line by line.
             String currentLine = fileContent.nextLine();
