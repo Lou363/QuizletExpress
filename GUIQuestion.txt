@@ -1,0 +1,104 @@
+BEGIN
+Q: With Swing, you use this class to create a frame.
+JFrame
+SwingFrame
+JavaFRame
+Frame
+
+Q: This is the part of a JFrame object that holds the components that have been added to the JFrame object.
+Content pane
+Viewing area
+Component array
+Object collection
+
+Q: This is a JPanel object’s default layout manager.
+FlowLayout
+GridLayout
+BorderLayout
+None
+
+Q: This is the default layout manager for a JFrame object’s content pane.
+BorderLayout
+GridLayout
+FlowLayout
+None
+
+Q: If a container is governed by a BorderLayout manager and you add a component to it, but you do not pass the second argument specifying the region, this is the region in which the component will be added.
+center
+north
+south
+east
+
+Q: Components in this/these regions of a BorderLayout manager are resized horizontally so they fill up the entire region.
+North and South
+East and West
+Center only
+North, South, East and West
+
+Q: Components in this/these regions of a BorderLayout manager are resized vertically so they fill up the entire region.
+East and West
+North and South
+Center only
+North, South, East and West
+
+Q: Components in this/these regions of a BorderLayout manager are resized both horizontally and vertically so they fill up the entire region.
+Center only
+East and West
+North and South
+North, South, East and West
+
+Q: This is the default alignment of a FlowLayout manager.
+Center
+Left
+Right
+No alignment
+
+Q: Adding radio button components to this type of object creates a mutually exclusive relationship between them.
+ButtonGroup
+MutualExclude
+LogicalGroup
+RadioGroup
+
+Q: You use this class to create Border objects.
+BorderFactory
+BorderMaker
+BorderCreator
+BorderSource
+
+Q: A panel cannot be displayed by itself.
+True
+False
+
+Q: You can place multiple components inside a GridLayout cell.
+False
+True
+
+Q: You can place multiple components inside a BorderLayout region.
+False
+True
+
+Q: You can place multiple components inside a container governed by a FlowLayout manager.
+True
+False
+
+Q: You can place a panel inside a region governed by a BorderLayout manager.
+True
+False
+
+Q: A component placed in a GridLayout manager’s cell will not be resized to fill up any extra space in the cell.
+False
+True
+
+Q: You normally add JCheckBox components to a ButtonGroup object.
+False
+True
+
+Q: A mutually exclusive relationship is automatically created among all JRadioButton components in the same container.
+False
+True
+
+Q: You can write a class that extends the JPanel class.
+True
+False
+
+END
