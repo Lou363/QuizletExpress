@@ -1,0 +1,122 @@
+BEGIN
+Q: The isDigit, isLetter, and isLetterOrDigit methods are members of this class
+Character
+String
+Char
+StringBuilder
+
+Q: This method converts a character to uppercase.
+toUpperCase
+makeUpperCase
+isUpperCase
+uppercase
+
+Q: The startsWith, endsWith, and regionMatches methods are members of this class
+String 
+Char
+Character
+Wrapper
+
+Q: The indexOf and lastIndexOf methods are members of this class
+String
+Integer
+Character
+Wrapper
+
+Q: The substring, getChars, and toCharArray methods are members of this class.
+String
+Float
+Character
+Wrapper
+
+Q: This String class method performs the same operation as the + operator when used on strings.
+concat
+plus
+add
+join
+
+Q: The String class has several overloaded versions of a method that accepts a value of any primitive data type as its argument and returns a string representation of the value. The name of the method is ___________ 
+valueOf
+stringValue
+getString
+valToString
+
+Q: If you do not pass an argument to the StringBuilder constructor, the object will have enough memory to store this many characters.
+16
+1
+256
+Unlimited
+
+Q: This is one of the methods that are common to both the String and StringBuilder classes
+length
+append
+insert
+delete
+
+Q: To change the value of a specific character in a StringBuilder object, use this method.
+setCharAt
+changeCharAt
+setChar
+change
+
+Q: To delete a specific character in a StringBuilder object, use this method
+deleteCharAt
+removeCharAt
+removeChar
+expunge
+
+Q: The character that separates tokens in a string is known as a __________
+delimiter
+separator
+tokenizer
+terminator
+
+Q: This String method breaks a string into tokens.
+split 
+break
+tokenize
+getTokens
+
+Q: These static final variables are members of the numeric wrapper classes and hold the minimum and maximum values for a particular data type
+MIN_VALUE and MAX_VALUE
+MIN and MAX
+MINIMUM and MAXIMUM
+LOWEST and HIGHEST
+
+Q: Character testing methods, such as isLetter, accept strings as arguments and test each character in the string.
+False
+True
+
+Q: If the toUpperCase method’s argument is already uppercase, it is returned as is, with no changes.
+True
+False
+
+Q: If toLowerCase method’s argument is already lowercase, it will be inadvertently converted to uppercase
+False
+True
+
+Q: The startsWith and endsWith methods are case-sensitive.
+True
+False
+
+Q: There are two versions of the regionMatches method: one that is case sensitive and one that can be case-insensitive.
+True
+False
+
+Q: The indexOf and lastIndexOf methods can find characters, but cannot find substrings.
+False
+True
+
+Q: The String class’s replace method can replace individual characters, but cannot replace substrings.
+True
+False
+
+Q: The StringBuilder class’s replace method can replace individual characters, but cannot replace substrings.
+False
+True
+
+Q: You can use the = operator to assign a string to a StringBuilder object
+False
+True
+
+END

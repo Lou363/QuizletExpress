@@ -1,0 +1,176 @@
+BEGIN
+Q: In an inheritance relationship, this is the general class.
+Super class
+Sub class
+Slave class
+Child class
+
+Q: In an inheritance relationship, this is the specialized class.
+Sub class
+Super class
+Slave class
+Child class
+
+Q: This key word indicates that a class inherits from another class.
+extends
+derived
+specialized
+based
+
+Q: A subclass does not have access to these superclass members.
+private
+public
+protected
+all of these
+
+Q: This keyword refers to an object's superclass:
+super
+this
+base
+superclass
+
+Q: In a subclass constructor, a call to the superclass constructor must __________
+Appear as the very first statement
+Appear as the very last statement
+Appear between the constructor’s header and the opening brace
+Not appear
+
+Q: The following is an explicit call to the superclass’s default constructor.
+super();
+default();
+class():
+base();
+
+Q: A method in a subclass that has the same signature as a method in the superclass is an example of __________.
+Overriding
+Overloading
+Composition
+An error
+
+Q: A method in a subclass having the same name as a method in the superclass but a different signature is an example of __________.
+Overloading
+Overriding
+Composition
+An error
+
+Q: These superclass members are accessible to subclasses and classes in the same package.
+protected
+public
+private
+all of these
+
+Q: All classes directly or indirectly inherit from this class.
+Object
+Super
+Root
+Java
+
+Q: With this type of binding, the Java Virtual Machine determines at runtime which method to call, depending on the type of the object that a variable references.
+Dynamic
+Flexible
+Early
+Static
+
+Q: This operator can be used to determine whether a reference variable references an object of a particular class.
+instanceof
+isclass
+typeof
+isinstance
+
+Q: When a class implements an interface, it must...
+Provide all of the nondefault methods that are listed in the interface, with the exact signatures and return types specified
+Overload all of the methods listed in the interface
+Not have a constructor
+Be an abstract class
+
+Q: Fields in an interface are __________.
+Final and static
+Final
+Static
+Not allowed
+
+Q: Abstract methods must be __________.
+Overridden
+Overloaded
+Deleted and replaced with real methods
+Declared as private
+
+Q: Abstract classes cannot __________.
+Be instantiated
+Be used as superclasses
+Have abstract methods
+Have fields
+
+Q: You use the __________ operator to define an anonymous inner class.
+new
+class
+inner
+anonymous
+
+Q: An anonymous inner class must _____.
+Extend a superclass OR implement an interface
+Extend a superclass
+Implement an interface
+Be a superclass
+
+Q: A functional interface is an interface with __________.
+Only one abstract method.
+No abstract methods.
+Only private methods.
+No name.
+
+Q: You can use a lambda expression to instantiate an object that __________.
+Implements a functional interface
+Has no constructor.
+Extends any superclass.
+Does not implement an interface.
+
+Q: Constructors are not inherited.
+True
+False
+
+Q: In a subclass, a call to the superclass constructor can only be written in the subclass constructor.
+True
+False
+
+Q: If a subclass constructor does not explicitly call a superclass constructor, Java will not call any of the superclass’s constructors.
+False
+True
+
+Q: An object of a superclass can access members declared in a subclass.
+False
+True
+
+Q: The superclass constructor always executes before the subclass constructor.
+True
+False
+
+Q: When a method is declared with the final modifier, it must be overridden in a subclass.
+False
+True
+
+Q: A superclass has a member with package access. A class that is outside the superclass’s package but inherits from the superclass can access the member.
+False
+True
+
+Q: A superclass reference variable can reference an object of a subclass that extends the superclass:
+True
+False
+
+Q: A subclass reference variable can reference an object of the superclass.
+False
+True
+
+Q: When a class contains an abstract method, the class cannot be instantiated
+True
+False
+
+Q: A class may only implement one interface.
+False
+True
+
+Q: By default all members of an interface are public.
+True
+False
+
+END
