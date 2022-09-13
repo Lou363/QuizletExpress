@@ -1,0 +1,128 @@
+BEGIN
+Q: When an exception is generated, it is said to have been __________.
+Thrown
+Built
+Caught
+Killed
+
+Q: This is a section of code that gracefully responds to exceptions.
+Exception handler
+Exception generator
+Exception manipulator
+Eexception monitor
+
+Q: If your code does not handle an exception when it is thrown, it is dealt with by this.
+Default exception handler
+The operating system
+System debugger
+Default exception generator
+
+Q: All exception classes inherit from this class.
+Throwable
+Error
+RuntimeException
+JavaException
+
+Q: FileNotFoundException inherits from __________.
+IOException
+Error
+JavaException
+FileException
+
+Q: You can think of this code as being “protected” because the application will not halt if it throws an exception.
+Try block
+Catch block
+Finally block
+Protected block
+
+Q: This method can be used to retrieve the error message from an exception object.
+getMessage
+getError
+errorMessage
+errorString
+
+Q: The numeric wrapper classes’ “parse” methods all throw an exception of this type.
+NumberFormatException
+ParseException
+IOException
+BadNumberException
+
+Q: This is one or more statements that are always executed after the try block has executed and after any catch blocks have executed if an exception was thrown.
+Finally block
+Try block
+Catch block
+Protected block
+
+Q: This is an internal list of all the methods that are currently executing.
+Call stack
+Call list
+List trace
+Invocation list
+
+Q: This method may be called from any exception object, and it shows the chain of methods that were called when the exception was thrown.
+printStackTrace
+printInvocationList
+printCallStack
+printCallList
+
+Q: These are exceptions that inherit from the Error class or the RuntimeException class.
+Unchecked exceptions
+Unrecoverable exceptions
+Recoverable exceptions
+Checked exceptions
+
+Q: All exceptions that do not inherit from the Error class or the RuntimeException class are __________.
+Checked exceptions
+Unrecoverable exceptions
+Recoverable exceptions
+Unchecked exceptions
+
+Q: This informs the compiler of the exceptions that could get thrown from a method.
+Throws clause
+Parameter list
+Catch clause
+Method return type
+
+Q: You use this statement to throw an exception manually.
+throw
+try
+generate
+System.exit(0)
+
+Q: This is the process of converting an object to a series of bytes that represent the object’s data.
+Serialization
+Deserialization
+Dynamic conversion
+Casting
+
+Q: You are not required to catch exceptions that inherit from the RuntimeException class.
+True
+False
+
+Q: When an exception is thrown by code inside a try block, all of the statements in the try block are always executed.
+False
+True
+
+Q: IOException serves as a superclass for exceptions that are related to programming errors, such as an out-of-bounds array subscript.
+False
+True
+
+Q: You cannot have more than one catch clause per try statement.
+False
+True
+
+Q: When an exception is thrown, the JVM searches the try statement’s catch clauses from top to bottom and passes control of the program to the first catch clause with a parameter that is compatible with the exception.
+True
+False
+
+Q: Not including polymorphic references, a try statement may have only one catch clause for each specific type of exception.
+True
+False
+
+Q:  When in the same try statement you are handling multiple exceptions and some of the exceptions are related to each other through inheritance, you should handle the more general exception classes before the more specialized exception classes.
+False
+True
+
+Q: The throws clause causes an exception to be thrown.
+False
+True
