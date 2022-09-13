@@ -7,7 +7,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
-
 public class GUI extends JFrame{
     private JPanel mainPanel;
     private JLabel questionLabel;
@@ -20,7 +19,7 @@ public class GUI extends JFrame{
     //This will construct the basic function
     public GUI(String quizzName){
         setTitle("Revising "+quizzName);
-        setSize(500,180);
+        setSize(520,200);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         //Now I must add its members: the panel
         buildMainPanel();
@@ -146,5 +145,4 @@ public class GUI extends JFrame{
             "questions to whom you go a wrong answer", "Game over", JOptionPane.WARNING_MESSAGE);
         }
     }
-
 }

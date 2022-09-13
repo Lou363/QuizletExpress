@@ -35,7 +35,9 @@ public class UpdateGUI {
         //I verify the answer
         if(buttonPressed.equalsIgnoreCase(correctAnswer)){
             score++;
-        } else {
+            SoundPlayer.playCorrectSound();
+        } else { //Wrong answers
+            SoundPlayer.playWrongSound();
             WrongAnswers.add(setOfQuestions.get(currentQuestionOnGUI));
             window.displayWrongAnswerMessage(correctAnswer);
         }
