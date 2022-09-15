@@ -10,7 +10,7 @@ the program looks for textfiles located in the Database subfolder
 
 ```TXT
 
-BEGIN the start of the quizz database.
+BEGIN // the start of the quizz database.
 
 Q : put here the question topic.
 put here the good answer.
