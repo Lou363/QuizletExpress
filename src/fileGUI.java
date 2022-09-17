@@ -12,6 +12,7 @@ public class fileGUI extends JFrame{
     private JLabel instruction;
     private JLabel extensionInfo;
     private JButton submitButton;
+    private JCheckBox soundEnabled;
     //General variables
     public String fileName;
     private File file;
@@ -19,7 +20,7 @@ public class fileGUI extends JFrame{
 
     public fileGUI(){
         setTitle("Select a file");
-        setSize(332,102);
+        setSize(332,115);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         //I build the main panel
         mainPanel = new JPanel();
@@ -41,6 +42,10 @@ public class fileGUI extends JFrame{
         //I adjust the X adjustement
         typeBox.setAlignmentX(CENTER_ALIGNMENT);
         instruction.setAlignmentX(CENTER_ALIGNMENT);
+        //I handle the sound check box
+        soundEnabled = new JCheckBox("Enable sound");
+        soundEnabled.setSelected(true);
+        soundEnabled.setAlignmentX(CENTER_ALIGNMENT);
         //I adjust in the secondary panel
         typeBox.add(fileBox);
         typeBox.add(extensionInfo);
@@ -48,6 +53,7 @@ public class fileGUI extends JFrame{
         //I append the rest in the main panel:
         mainPanel.add(instruction);
         mainPanel.add(typeBox);
+        mainPanel.add(soundEnabled);
         //I register the ation listeners
         fileBox.addKeyListener(new TriggerOnEnterKey());
         submitButton.addActionListener(new GetButtonPressed());
@@ -107,7 +113,7 @@ public class fileGUI extends JFrame{
                     setOfQuestions.add(newQuestion);
                 }
             }
-            UpdateGUI.intializeGUI(setOfQuestions,fileName);
+            UpdateGUI.intializeGUI(setOfQuestions,fileName,soundEnabled.isSelected());
             //I close this GUI
             this.setVisible(false);
             fileContent.close();

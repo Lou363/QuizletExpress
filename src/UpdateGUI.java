@@ -2,6 +2,7 @@ import java.util.*;
 
 public class UpdateGUI {
     private static int score=0;
+    private static boolean soundStatus;
     private static ArrayList<Integer> possibleRandomization = new ArrayList<>();
     private static ArrayList<Question> setOfQuestions;
     private static ArrayList<Question> WrongAnswers = new ArrayList<>();
@@ -11,7 +12,8 @@ public class UpdateGUI {
     private static GUI window;
     private static String correctAnswer;
 
-    public static void intializeGUI(ArrayList<Question> tobeDefinedSQuestions,String fileName){
+    public static void intializeGUI(ArrayList<Question> tobeDefinedSQuestions,String fileName,boolean soundResult){
+        soundStatus = soundResult;
         setOfQuestions = tobeDefinedSQuestions;
         for(int i=0;i<setOfQuestions.size();i++){
             possibleRandomization.add(i);
@@ -34,10 +36,12 @@ public class UpdateGUI {
     public static void updateGUI(String buttonPressed){
         //I verify the answer
         if(buttonPressed.equalsIgnoreCase(correctAnswer)){
+            if (soundStatus)
+                SoundPlayer.playCorrectSound();;
             score++;
-            SoundPlayer.playCorrectSound();
         } else { //Wrong answers
-            SoundPlayer.playWrongSound();
+            if (soundStatus)
+                SoundPlayer.playWrongSound();
             WrongAnswers.add(setOfQuestions.get(currentQuestionOnGUI));
             window.displayWrongAnswerMessage(correctAnswer);
         }

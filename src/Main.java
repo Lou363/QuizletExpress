@@ -5,7 +5,7 @@ public class Main {
         new fileGUI();
         /*TO-DO:
          * List all questions in database through a dropdownbox
-         * Add feature to disable sound
+         * Add quizzes for chapter 9
          */
     }
 }
