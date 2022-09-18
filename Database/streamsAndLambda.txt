@@ -1,0 +1,112 @@
+BEGIN
+Q: Lambda expressions implement:
+Functional Interfcaes
+Methodical interfaces
+Anonymous classes
+Unregistered objects
+
+Q: With ___ iteration the library determines how to access all the elements in a collection to perform a task
+Internal
+List
+Rotational
+Functional
+
+Q: Functional programs are easier to ___ (i.e., perform multiple operations simultaneously) so that your programs can take advantage of multi-core architectures to enhance performance.
+Parallelize
+Iterate
+Predicate
+Initialize
+
+Q: An implementation of the functional interface ___ takes two T arguments,performs an operation on them (such as a calculation) and returns a value of type T.
+BinaryOperator<T>
+Consumer<T>
+Supplier<T>
+UnaryOperator<T>
+
+Q: An implementation of the functional interface ___ takes a T argument and returns a boolean, and tests whether the T argument satisfies a condition
+Predicate<T>
+BinaryOperator<T>
+Consumer<T>
+Supplier<T>
+
+Q: A(n) ___ represents an anonymous method—a shorthand notation for implementing a functional interface.
+Lambda expression
+Interface
+Unregistered classes
+Pipe
+
+Q: Intermediate stream operations are performed before the terminal operation is invoked:
+False
+True
+
+Q: The terminal stream operation ___ performs processing on every element in a stream.
+forEach
+filter
+map
+reduce
+
+Q: ___ lambdas use local variables from the enclosing lexical scope.
+Capturing
+private
+Piped
+Uninstanciated
+
+Q: A performance feature of lazy evaluation is the ability to perform ___ evaluation—that is, to stop processing the stream pipeline as soon as the desired result is available.
+Short-circuit
+Capturing
+Tampered
+Lambda
+
+Q: For Maps, a BiConsumer’s first parameter represents the ___ and its second represents the corresponding ___.
+Key, value
+Key, reference
+Identifier, value
+Identifier, reference
+
+Q: Lambda expressions can be used anywhere functional interfaces are expected.
+True
+False
+
+Q: Terminal operations are lazy—they perform the requested operation when they are called.
+False
+True
+
+Q: Method 'reduce' first argument is formally called an identity value: a value that, when combined with a stream element using the IntBinaryOperator, produces the stream element’s original value. For example, when summing the elements, the identity value is 1, and when getting the product of the elements, the identity value is 0.
+False
+True
+
+Q: Stream method findFirst is a short-circuiting terminal operation that processes the stream pipeline but terminates processing as soon as an object is found.
+True
+False
+
+Q: Stream method flatMap receives a Function that maps a stream into an object. For example, the object could be a String containing words and the result could be another intermediate Stream<String> for the individual words.
+False
+True
+
+Q: When a class implements an interface with default methods and overrides them, the class inherits the default methods’ implementations. An interface’s designer can now evolve an interface by adding new default and static methods without breaking existing code that implements the interface.
+False
+True
+
+Q: It is mandatory to specify the type of the parameter when setting up a lambda expression when the stream handles type only.
+False
+True
+
+Q: In a stream which method is used to loop through every item in an array:
+of
+mapToObject
+iterate
+hasNext
+
+Q: Which punctuation shall be used to call a method of an object when written in a stream ?
+::
+->
+:
+.
+
+Q: Which class is called to keep record of elements processed in a stream ?
+Collectors
+Iterator
+Collector
+Recorder
+
+END

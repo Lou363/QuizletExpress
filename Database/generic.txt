@@ -1,0 +1,123 @@
+BEGIN
+
+Q: A(n) ____ is used to iterate through a collection and can remove elements from the collection during the iteration.
+Iterator
+Set
+Map
+A stream
+
+Q: An element in a List can be accessed by using the element’s ____.
+Index
+Position
+Reference
+Iteration position
+
+Q: Assuming that myArray contains references to Double objects, ____ occurs when the statement "myArray[0] = 1.25;" executes
+Autoboxing
+Overriding
+Unboxing
+Initialization
+
+Q:  Class ____ provides the capabilities of array-like data structures that can resize themselves dynamically:
+ArrayList
+Array
+Set
+Collections
+
+Q: You can use a(n) ____ to create a collection that offers only read-only access to others while allowing read–write access to yourself.
+Unmodifiable wrapper
+Set
+LinkedList
+Static array
+
+Q: Assuming that myArray contains references to Double objects, ____ occurs when the statement "double number = myArray[0];" executes.
+Unboxing
+Autoboxing
+Wrapping
+Casting
+
+Q: Collections algorithm ____ determines if two collections have elements in common.
+disjoint
+isDisjoint
+isCommon
+isJoint
+
+Q: Values of primitive types may be stored directly in a collection.
+False
+True
+
+Q: A Set can contain duplicate values.
+False
+True
+
+Q: A Map can contain duplicate keys.
+False
+True
+
+Q: A LinkedList can contain duplicate values.
+True
+False
+
+Q: CollectionS is an interface. (with an S)
+False
+True
+
+Q: Iterators can remove element:
+True
+False
+
+Q: With hashing, as the load factor increases, the chance of collisions decreases.
+False
+True
+
+Q: A PriorityQueue permits null elements.
+False
+True
+
+Q: Which symbol marks the beginning of a type parameter
+Less than/Bigger than symbol
+Parenthesis
+Braces
+Quotation marks
+
+Q: Which error can be thrown if you add an object to an iterator ?
+ConcurentModificationException
+NullPointerException
+NullIterativeReferenceException
+No errors, it is common practise
+
+Q: Which method would you call to concatenate two list from the List superclass ?
+addAll
+concat
+append
+Use the plus operator
+
+Q: ListIterators can return to a previous element if it is within range
+True
+False
+
+Q: Which function to you call to add an element to a priority queue ?
+offers
+queue
+addAtEndOfLine
+peek
+
+Q: By default in which order is a priority queue in ?
+Ascending order
+Order in which element were added
+Descending order
+Reverse order from which the element were added
+
+Q: Which method do you call to add an element to a map ?
+put
+add
+extend
+newKey
+
+Q: Which method would you call to get the set of all keys in a map ?
+keySet
+keys
+hasNextKey
+toKeyArray
+
+END
