@@ -1,0 +1,129 @@
+BEGIN
+
+Q: A thread enters the terminated state when ___.
+It has completed its task
+Has been killed
+
+Q: To pause for a designated number of milliseconds and resume execution, a thread should call method __ of class __.
+sleep, Thread
+hold, Runnable
+sleep, Runnable
+hold, Thread
+
+Q: A runnable thread can enter the __ state for a specified interval of time.
+Timed waiting
+Sleep
+Buffered
+Hold
+
+Q: At the operating-system level, the runnable state actually encompasses two separate states, ___ and ___.
+Ready, running
+Running, terminated
+Running, terminated
+Running, paused
+
+Q: Runnables are executed using a class that implements the __ interface.
+Executor
+Runnable
+Thread
+Process
+
+Q: ExecutorService method ___ prevents the ExecutorService from accepting new tasks, but continues executing tasks that have already been submitted.
+shutdown
+newCachedThreadBlock
+lock
+close
+
+Q: In a(n) producer/consumer relationship, the __ generates data and stores it in a shared object, and the __ reads data from the shared object.
+Producer, consumer
+Consumer, producer
+
+Q: Only one thread at a time can execute a(n) ___ statement or block.
+Synchronised
+Locked
+Hashed
+Shared
+
+Q: A thread is not runnable if it has terminated.
+True
+False
+
+Q: Some operating systems use timeslicing with threads. Therefore, they can enable threads to preempt threads of the same priority.
+False
+True
+
+Q: When the thread’s quantum expires, the thread returns to the running state as the operating system assigns it to a processor.
+False
+True
+
+Q: On a single-processor system without timeslicing, each thread in a set of equal- priority threads (with no other threads present) runs to completion before other threads of equal priority get a chance to execute.
+True
+False
+
+Q: In the Thread class, which method should you call to deprioratise a thread ?
+yield
+setPriotity(OS_MIN) //OS has been specifised in declartion
+setPriority(System.MINIMUM_YIELD)
+hold
+
+Q: Which method would you call to wait for another thread to finish before calling itself ?
+join
+wait
+runAt
+We must create an ExecutorService
+
+Q: One implementing the Runnable interface what method must be overriden ?
+run
+start
+thread
+All of them
+
+Q: Which method do you call to initialize an Executor Service
+newCachedThreadPool
+The default constructor
+execute
+ExecutorService cannot be instanciated
+
+Q: When running a synchronised program, which object should you use to avoid conflicts when modifying several common variables ?
+Buffers
+ArrayList
+Iterators
+Isolators
+
+Q: A synchronised method/class/object can be accessed by more than one process at once.
+True
+False
+
+Q: In an ArrayBlockingQueue, how do you wait for space when the array is full ?
+put
+offer
+hold
+We can't or it'll throw an exception
+
+Q: Which exception is thrown when interupting a process
+InterruptedException
+None this operation is normal
+TerminatedThreadException
+ExecutorServiceException
+
+Q: Which method do we call to inform waiting threads we're clear to run ?
+signalAll
+It is done automaticly by the JVM
+unlock
+dequeue
+
+Q: What should you do to avoid two threads working on the same method at once ?
+Lock it using synchronised
+Code those method in a private class
+Use ExecutorService to avoid parallel process
+Quit java
+
+Q: Buffers have an unlimited capacity (except for the system's memory of course):
+False
+True
+
+Q: Which concurrent collection allows an arbitary amount of readers and a limited amount of writers?
+ConcurentHasingMap
+ArrayBlockingQueue
+
+END
