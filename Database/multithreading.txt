@@ -72,7 +72,7 @@ wait
 runAt
 We must create an ExecutorService
 
-Q: One implementing the Runnable interface what method must be overriden ?
+Q: When implementing the Runnable interface what method must be overriden ?
 run
 start
 thread

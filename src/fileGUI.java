@@ -2,12 +2,13 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.List;
 import java.io.File;
 import java.io.FileNotFoundException;
 
 public class fileGUI extends JFrame{
     private JPanel mainPanel;
-    private JTextField fileBox;
+    private JComboBox<String> fileBox;
     private JPanel typeBox;
     private JLabel instruction;
     private JLabel extensionInfo;
@@ -20,8 +21,9 @@ public class fileGUI extends JFrame{
 
     public fileGUI(){
         setTitle("Select a file");
-        setSize(332,115);
+        setSize(380,115);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        //I list out ALL THE FILES:
         //I build the main panel
         mainPanel = new JPanel();
         mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
@@ -34,14 +36,39 @@ public class fileGUI extends JFrame{
 
     public void constructMainPanel(){
         //I initialize the first few elements
-        instruction = new JLabel("Type the name of the questionaire you wish to open:");
+        instruction = new JLabel("Select the questionaire you wish to open:");
         typeBox = new JPanel();
-        fileBox = new JTextField(15);
         extensionInfo = new JLabel(".txt");
         submitButton = new JButton("Submit");
-        //I adjust the X adjustement
-        typeBox.setAlignmentX(CENTER_ALIGNMENT);
-        instruction.setAlignmentX(CENTER_ALIGNMENT);
+        /* ##############################
+         * #    LOOP THROUGH FILES      #
+         * ##############################
+         */
+        //I handle the fileBox:
+        //Now I loop through every files
+        File folder = new File("Database/");
+        List<String> setOfFiles = new ArrayList<String>();
+        try{
+        //I loop through every files
+            File[] listOfFiles = folder.listFiles();;
+            for (int i = 0; i < listOfFiles.length; i++) {
+                if (listOfFiles[i].isFile()) {
+                    setOfFiles.add(listOfFiles[i].getName().replace(".txt", ""));
+                } else if (listOfFiles[i].isDirectory()) {
+                    continue;
+                }
+            }
+        } catch (NullPointerException e){
+            //This code will execute if the directory is empty
+            System.out.println("An error has occured: no files in directory.");
+            JOptionPane.showMessageDialog(this, "No files have been detected " +
+            "in folder 'Database'.\nThis programm cannot proceed", "No files in directory", 
+            JOptionPane.ERROR_MESSAGE);
+        }
+        //From this point I initialize the ComboBox
+        String[] strFileSet = new String[setOfFiles.size()];
+        strFileSet = setOfFiles.toArray(strFileSet);
+        fileBox = new JComboBox<String>(strFileSet);
         //I handle the sound check box
         soundEnabled = new JCheckBox("Enable sound");
         soundEnabled.setSelected(true);
@@ -50,7 +77,9 @@ public class fileGUI extends JFrame{
         typeBox.add(fileBox);
         typeBox.add(extensionInfo);
         typeBox.add(submitButton);
+        typeBox.setAlignmentX(CENTER_ALIGNMENT);
         //I append the rest in the main panel:
+        instruction.setAlignmentX(CENTER_ALIGNMENT);
         mainPanel.add(instruction);
         mainPanel.add(typeBox);
         mainPanel.add(soundEnabled);
@@ -83,7 +112,7 @@ public class fileGUI extends JFrame{
      * ##########################################
      */
     private void readFileAndExcute(){
-        fileName = fileBox.getText();
+        fileName = fileBox.getSelectedItem().toString();
         //I verify that the string has actually something in it.
         if(fileName.length()==0){
             JOptionPane.showMessageDialog(this, "Please enter a file name.", "Empty field",
@@ -92,8 +121,8 @@ public class fileGUI extends JFrame{
         }
         try{
             // I read the main file
-            fileName = fileBox.getText();
-            file = new File("Database/"+fileBox.getText()+".txt");
+            fileName = fileBox.getSelectedItem().toString();
+            file = new File("Database/"+fileBox.getSelectedItem().toString()+".txt");
             Scanner fileContent = new Scanner(file);
             //I begin to read the file line by line.
             String currentLine = fileContent.nextLine();
@@ -120,7 +149,7 @@ public class fileGUI extends JFrame{
         } catch(FileNotFoundException e){ //I handle errors
             JOptionPane.showMessageDialog(this, "File '"+fileName+".txt has not been found.",
             "File not found", JOptionPane.WARNING_MESSAGE);
-            fileBox.setText("");
+            fileBox.setSelectedIndex(0);
         }
     }
 }

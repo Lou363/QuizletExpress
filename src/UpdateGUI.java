@@ -11,6 +11,7 @@ public class UpdateGUI {
     private static int currentQuestionOnGUI;
     private static GUI window;
     private static String correctAnswer;
+    private static SoundPlayer soundSytem = new SoundPlayer();
 
     public static void intializeGUI(ArrayList<Question> tobeDefinedSQuestions,String fileName,boolean soundResult){
         soundStatus = soundResult;
@@ -34,14 +35,15 @@ public class UpdateGUI {
     }
 
     public static void updateGUI(String buttonPressed){
+
         //I verify the answer
         if(buttonPressed.equalsIgnoreCase(correctAnswer)){
             if (soundStatus)
-                SoundPlayer.playCorrectSound();;
+                soundSytem.playCorrectSound();
             score++;
         } else { //Wrong answers
             if (soundStatus)
-                SoundPlayer.playWrongSound();
+                soundSytem.playWrongSound();
             WrongAnswers.add(setOfQuestions.get(currentQuestionOnGUI));
             window.displayWrongAnswerMessage(correctAnswer);
         }
